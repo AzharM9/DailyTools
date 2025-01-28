@@ -63,8 +63,7 @@ A_MaxHotkeysPerInterval := 200
 ;=================================================================================================================
 
 :*:slc::select * from a 					;after typing "slc" replace it with "select * from a"
-:*:slw::select * `nfrom  `nwhere			;after typing "slw" replace it with "select * from x where"
-:*:slo::select * `nfrom  `nwhere `norder by ;after typing "slo" replace it with "select * from x where order by"
+:*:slw::select * `nfrom  `nwhere `norder by ;after typing "slw" replace it with "select * from x where order by"
 :*:upw::update `nset  `nwhere				;after typing "upw" replace it with "update x where"
 :*:dlw::delete `nfrom  `nwhere				;after typing "dlw" replace it with "delete from x where"
 
