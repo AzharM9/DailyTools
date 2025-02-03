@@ -6,7 +6,7 @@ F2::AutoClick()
 
 F9::Send "#^{Left}"				;F9 as Win + Ctrl + Left Arrow to move to left desktop window 
 
-;Alt & F9::SpamBackSlash()
+Alt & F9::SpamNumpad5()
 
 F10::Send "#^{Right}"			;F10 as Win + Ctrl + Right Arrow to move to right desktop window
 
@@ -31,7 +31,9 @@ Alt & 2::screenshot_n_show_word_app()	;alt + 2 to press Printscreen button
 Alt & 3::paste_n_minimize_word_app()	;alt + 3 to Ctrl + V/Paste and minimize
 Alt & Esc::Send "#4"					;alt + esc to Win + 4/Open Pinned 4th app in the taskbar
 
-;Tab::Send "/{Tab}"
+;Ctrl + [ or Ctrl + ] as mouse clicks
+Ctrl & ]::RButton
+Ctrl & [::LButton
 
 ;Alt + WASD become arrow keys
 Alt & a::Send "{Left}"
@@ -118,7 +120,7 @@ AutoClick(){
     
 }
 
-SpamBackSlash(){
+SpamNumpad5(){
 
 	if(GetKeyState("CapsLock", "T") == 0){
 		SetCapsLockState(1)
@@ -126,7 +128,7 @@ SpamBackSlash(){
     
     Loop{
 
-        Send "{\}"
+        Send "{Numpad5}"
         Sleep 1000  ; Start pressing the key every X miliseconds
     }until (GetKeyState("CapsLock", "T") != 1)
 	Persistent
