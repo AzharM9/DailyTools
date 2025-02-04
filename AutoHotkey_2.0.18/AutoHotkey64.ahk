@@ -31,9 +31,10 @@ Alt & 2::screenshot_n_show_word_app()	;alt + 2 to press Printscreen button
 Alt & 3::paste_n_minimize_word_app()	;alt + 3 to Ctrl + V/Paste and minimize
 Alt & Esc::Send "#4"					;alt + esc to Win + 4/Open Pinned 4th app in the taskbar
 
-;Ctrl + [ or Ctrl + ] as mouse clicks
-Ctrl & ]::RButton
-Ctrl & [::LButton
+;Ctrl + q or Ctrl + e as mouse clicks
+Alt & q::LButton
+Alt & e::RButton
+
 
 ;Alt + WASD become arrow keys
 Alt & a::Send "{Left}"
